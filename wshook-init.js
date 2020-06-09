@@ -11,6 +11,6 @@ window.wsHook.after = function(messageEvent, url, wsObject) {
 }
 
 window.wsHook.after = function(messageEvent, url, wsObject) {
-    wsObject.send("Intercepted and sent again")
+    //wsObject.send("Intercepted and sent again")
     return null;
 }
