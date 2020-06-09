@@ -1,4 +1,4 @@
-wsHook.after = function(messageEvent, url, wsObject) {
+window.wsHook.after = function(messageEvent, url, wsObject) {
     var bodyStart = messageEvent.data.search('<body>');
     var bodyEnd = messageEvent.data.search('</body>');
 
@@ -10,7 +10,7 @@ wsHook.after = function(messageEvent, url, wsObject) {
     return messageEvent;
 }
 
-wsHook.after = function(messageEvent, url, wsObject) {
+window.wsHook.after = function(messageEvent, url, wsObject) {
     wsObject.send("Intercepted and sent again")
     return null;
 }
